@@ -1,0 +1,141 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+  @keyframes grow {
+    0% {
+      transform: scale(1); /* Начальное состояние */
+    }
+    50% {
+      transform: scale(1.1); /* Конечная точка анимации */
+    }
+    100% {
+      transform: scale(1); /* Конечная точка анимации */
+    }
+  }
+
+body {
+  font-size: 1.2rem;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; }
+  body header {
+    width: 100vw;
+    padding: 5rem;
+    background: linear-gradient(to bottom, orange, white); }
+    body header nav {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6rem; }
+      body header nav .basket:hover {
+        border: 2px solid rgb(216, 49, 49);
+        border-radius: 150px;
+      }
+
+      body header nav .logo svg {
+        position: relative;
+        top: 11px; }
+      body header nav .menu {
+        list-style: none;
+        display: flex;
+        gap: 6rem; }
+        body header nav .menu li a {
+          font-size: 1.75rem;
+          color: black;
+          text-decoration: none;}
+          body header nav .menu li a:hover {
+            text-decoration: underline;
+            font-weight: 700;
+            color: white; }
+
+    body header .header-description {
+      display: flex;
+      justify-content: center; }
+      body header .header-description .order {
+        margin-right: 1rem;
+        margin-top: 10rem; }
+        body header .header-description .order h1 {
+          font-size: 3rem;
+          margin-bottom: 2rem; }
+        body header .header-description .order p {
+          font-size: 1.2rem;
+          margin-bottom: 2rem; }
+        body header .header-description .order div {
+          font-size: 1.5rem;
+          cursor: pointer;
+          text-align: center;
+          padding: 1rem;
+          max-width: 12rem;
+          background-color: red;
+          color: white;
+          border-radius: 2rem;
+          border: 0.2rem solid red; }
+          body header .header-description .order div:hover {
+            animation-name: grow;
+            animation-duration: 0.5s;
+            animation-timeline:inherit;
+            animation-fill-mode: forwards;
+            
+
+            font-weight: 700;
+            color: rgb(44, 25, 25); }
+
+            
+  body section {
+    width: 1600px;
+    margin-bottom: 2rem; }
+    body section .menu-title {
+      margin-bottom: 3rem;
+      text-align: center;
+      font-weight: 700;
+      font-size: 3rem; }
+    body section .menu-blocks {
+      justify-content: center;
+      flex-wrap: wrap;
+      display: flex;
+      text-align: center;
+      gap: 2rem; }
+      body section .menu-blocks .menu-item img:hover {
+        box-shadow: -10px 10px 10px rgba(0, 0, 0, 0.5);
+        border-radius: 2.6em;}
+        body section .menu-blocks .menu-item h2 a {
+          color: black;
+        text-decoration: none;}
+        body section .menu-blocks .menu-item h2 a:hover {
+          color: rgb(122, 75, 75);
+          text-decoration: solid;}
+
+
+  body footer {
+    background: linear-gradient(to bottom, white, orange);
+    padding-top: 5rem;
+    width: 100vw;
+    text-align: center; }
+    body footer .footer-links {
+      margin-bottom: 2rem;
+      justify-content: center;
+      gap: 1.5rem;
+      list-style: none;
+      display: flex; }
+      body footer .footer-links li {
+        cursor: pointer; }
+        body footer .footer-links li:hover {
+          text-decoration: underline;
+            font-weight: 700;
+            color: rgb(212, 131, 131); }
+    body footer p {
+      cursor: pointer;
+      margin-bottom: 2rem; }
+      body footer p:hover {
+        text-decoration: underline;
+            font-weight: 700;
+            color: rgb(212, 131, 131); }
+    
+    body footer .media1 {
+      position: relative;
+      top: 2.5px;
+    }
